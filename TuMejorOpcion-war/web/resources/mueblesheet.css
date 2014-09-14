@@ -118,7 +118,7 @@ fieldset
 .iceCmdLnk, .iceOutLnk {
 
  font-weight: normal;
- color: #AD5AA2;
+ color: #DB2713;
 }
 
 
@@ -126,18 +126,18 @@ fieldset
 {
  text-decoration:underline;
  font-weight: normal;
- color: #AD5AA2;
+ color: #DB2713;
 }
 
 .cmdLnk{
  text-decoration: none;
  font-weight: normal;
- color: #AD5AA2;
+ color: #DB2713;
 }
 
 .cmdBtn{
-    color: #AD5AA2;
-    background-color:#AD5AA2;
+    color: #DB2713;
+    background-color:#DB2713;
 }
 
 .iceOutTxt, .iceOutLbl {
@@ -265,7 +265,7 @@ fieldset
 .iceSelInpDateWeek {
  /* the days of the week row */
  font-weight: normal;
- color: #AD5AA2;
+ color: #DB2713;
  text-align: center;
  padding-left: 5px;
  padding-right: 5px;
@@ -298,8 +298,8 @@ fieldset
 
 .iceSelInpDateCur a {
  text-decoration: none;
- background-color: #92498B;
- border: 1px solid #92498B;
+ background-color: #981F2B;
+ border: 1px solid #981F2B;
  color: #FFFFFF;
  width: 100%;
  height: 100%;
@@ -311,7 +311,7 @@ fieldset
 .iceSelInpDateDay a:hover {
  /* the day text */
  text-decoration: none;
- color: #AD5AA2;
+ color: #DB2713;
 }
 
 /*
@@ -382,7 +382,7 @@ fieldset
 /* Las Data tables son renderizadas alternado el color de las filas (segundo color) */
 .iceDatTblRow2
 {
- background-color: #E0C2DD;
+ background-color: #E70C0C;
 }
 
 /* set the common attributes for the column classes */
@@ -479,8 +479,8 @@ fieldset
 /* override the attributes for the currently selected page */
 .iceDatPgrScrCol a {
  color: #FFFFFF;
- border: 1px solid #92498B;
- background-color: #92498B;
+ border: 1px solid #981F2B;
+ background-color: #981F2B;
 }
 
 * html .iceDatPgrScrCol a {
@@ -490,7 +490,7 @@ fieldset
 /* set the attributes for the mouseover on none-current pages */
 .iceDatPgrCol a:hover {
 color: #000000;
-border: 1px solid #803d7B;
+border: 1px solid #981F2B;
 text-decoration: underline;
 }
 
@@ -1319,7 +1319,7 @@ display: block;
 .navItem:hover, .navActvItem:hover, .navOpenItem:hover {
 background-color: #FFFFFF;
 color: #000000;
-border: 1px solid #2A6CC2;
+border: 1px solid #C22A2A;
 }
 
 .navOpenItem {
@@ -1330,7 +1330,7 @@ font-weight: bold;
 
 .navActvItem {
 width: 100%;
-background-color: #2A6CC2;
+background-color: #C22A2A;
 color: #FFFFFF;
 background-image: url( ./css-images/cal_arrow_right.gif );
 background-position: center right;
@@ -1360,7 +1360,7 @@ height: 13px;
 }
 
 .iceOutProgFill {
-background-color: #026AFF; /* background-image:url(./css-images/window_top.gif);*/
+background-color: #FF0202; /* background-image:url(./css-images/window_top.gif);*/
 background-position: top left;
 background-repeat: repeat-x;
 display: block;
@@ -1402,7 +1402,7 @@ position: relative;
 
 .iceSelInpTxtSelRow {
 display: block;
-background-color: #2A6CC2;
+background-color: #C22A2A;
 color: #FFFFFF;
 padding: 2px;
 padding-left: 10px;
@@ -1458,7 +1458,7 @@ color: #000000;
 
 .tablebg {
 background-color: #EEF3FB;
-border: 1px solid #6392C6;
+border: 1px solid #DD2626;
 width: 70%;
 }
 
@@ -1566,7 +1566,7 @@ text-decoration: none;
 }
 
 .iceMnuBarItem a:hover { /* was iceMenu */
-background-color: #2A6CC2;
+background-color: #C22A2A;
 color: #FFFFFF;
 border-right: 1px solid #FFFFFF;
 }
@@ -1612,7 +1612,7 @@ padding-bottom: 3px;
 }
 
 .iceMnuItm a:hover { /* was iceSubMenuRow*/
-background-color: #2A6CC2;
+background-color: #C22A2A;
 }
 
 .iceMnuItm a:hover .iceOutTxt, .iceMnuItm a:hover .iceMnuItmLabel{
@@ -1684,7 +1684,7 @@ width: 100%;
 }
 
 .iceMnuBarVrtItem a:hover { /* was iceMenu_verticalItem */
-background-color: #2A6CC2;
+background-color: #C22A2A;
 color: #FFFFFF;
 text-decoration: none;
 }
@@ -1718,7 +1718,7 @@ padding-bottom: 3px;
 }
 
 .iceMnuItmVrt a:hover { /* was iceMenu_vertical_subItem */
-background-color: #2A6CC2;
+background-color: #C22A2A;
 color: #FFFFFF;
 text-decoration: none;
 }
@@ -1785,7 +1785,7 @@ border: 0px solid #FFFFFF;
 }
 
 .iceMnuPopVrtItem a:hover { /* was iceMenu_verticalItem */
-background-color: #2A6CC2;
+background-color: #C22A2A;
 color: #FFFFFF;
 text-decoration: none;
 }
@@ -2266,8 +2266,8 @@ cursor: default;
 /* override the attributes for the currently selected page */
 .icePaginatorAtvCol-dis a {
 color: #ABABAB;
-/* border:1px solid #2A6CC2;
-background-color:#2A6CC2;
+/* border:1px solid #C22A2A;
+background-color:#C22A2A;
 */
 cursor: default;
 }
@@ -2275,7 +2275,7 @@ cursor: default;
 /* set the attributes for the mouseover on none-current pages */
 .icePaginatorCol-dis a:hover {
 /*color:#000000;
-border:1px solid #2A6CC2;*/
+border:1px solid #C22A2A;*/
 }
 
 /*
@@ -2584,14 +2584,14 @@ white-space: nowrap;
 ----------- Table Row Selection --------
 */
 .iceRowSelSelected {
-background-color: #8D4687;
+background-color: #C71818;
 }
 .iceRowSelSelected span {
 color: #FFFFFF;
 }
 
 .iceRowSelSelectedMouseOver {
-background-color: #5B265C;
+background-color: #C71818;
 }
 
 .iceRowSelSelectedMouseOver span {
@@ -2599,7 +2599,7 @@ color: #FFFFFF;
 }
 
 .iceRowSelMouseOver {
-background-color: #CF9EC8;
+background-color: #C71818;
 }
 
 .iceRowSelMouseOver span{
