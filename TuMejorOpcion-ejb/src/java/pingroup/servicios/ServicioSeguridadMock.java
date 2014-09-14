@@ -43,7 +43,15 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
         if(r!=null)
             return r;
         else
-            return persistencia.crearUsuario(token);
+        {
+            //MARICO TODO
+            //TODO
+            
+            //SUPER TODO
+            
+            //EN SERIO TODO
+            return null;
+        }
     }
     
 }

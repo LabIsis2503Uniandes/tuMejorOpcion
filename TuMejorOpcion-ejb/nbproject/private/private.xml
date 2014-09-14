@@ -9,5 +9,15 @@
             <file>file:/C:/Users/estudiante/Desktop/Workspace%20NetBeans/Laboratorio3/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/ServicioReporteVentas.java</file>
         </group>
         <group name="Experimento 1"/>
+        <group>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/servicios/ServicioSeguridadMock.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/servicios/ServicioPersistenciaMock.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/vos/Usuario.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/excepciones/AutenticacionException.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/interfaces/IServicioPersistenciaLocal.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/vos/Cupon.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/interfaces/IServicioSeguridadLocal.java</file>
+            <file>file:/C:/Users/estudiante/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-ejb/src/java/pingroup/vos/Tienda.java</file>
+        </group>
     </open-files>
 </project-private>

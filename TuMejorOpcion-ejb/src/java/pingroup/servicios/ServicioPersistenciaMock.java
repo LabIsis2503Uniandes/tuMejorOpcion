@@ -51,9 +51,6 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
         return null;
     }
 
-    @Override
-    public Usuario crearUsuario(String token) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+  
     
 }

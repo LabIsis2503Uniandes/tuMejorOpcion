@@ -20,11 +20,6 @@ public interface IServicioPersistenciaLocal {
     */
     public Usuario buscarPorToken(String token); 
 
-    /**
-     * Crea un usuario nuevo en el sistema con su token en facebook
-     * @param token El token de facebook del usuario
-     * @return El usuario nuevo
-     */
-    public Usuario crearUsuario(String token);
+
     
 }
