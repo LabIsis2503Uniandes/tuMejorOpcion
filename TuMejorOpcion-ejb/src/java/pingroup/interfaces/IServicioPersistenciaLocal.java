@@ -65,6 +65,19 @@ public interface IServicioPersistenciaLocal {
     public void aniadirCupon (Cupon cupon, Usuario usuario) ;
     
     /**
+     * Busca un cupon dado su id, retorna null si no existe el cupon
+     * @param idCupon El id del cupon que se esta buscando
+     */
+    public Cupon darCuponPorId(String idCupon);
+    
+    /**
+     * Descuenta dinero del cupón y retorna true si fue posible descontar ese dinero
+     * @param dineroADescontar La cantidad de dinero a descontar
+     * @param cupon El cupon del que se quiere descontar
+     * @return  True si es una transacción valida y false de lo contrario.
+     */
+    public boolean descontarDineroCupon (double dineroADescontar, Cupon cupon);
+    /**
      * Da la lista de usuarios en el sistema
      * @return List con los usuarios del sistema
      */
@@ -82,5 +95,23 @@ public interface IServicioPersistenciaLocal {
      */
     public List<Cupon> getCupones();
     
-  
+    /**
+     * Aniade una nuvea tienda en el sistema
+     * @param tienda La tienda nueva que se quiere aniadir en el sistema
+     */
+    public void aniadirTienda (Tienda tienda);
+    
+    /**
+     * Busca una tienda por su Id de Facebook
+     * @param idTienda El Id de la tienda
+     * @return La tienda buscada o null si no está en el sistema
+     */
+    public Tienda buscarTiendaPorId (String idTienda);
+    
+    /**
+     * Busca una tienda por su nombre
+     * @param nombre Nombre de la tienda buscada
+     * @return La tienda buscada o null si no está en el sistema
+     */
+    public Tienda buscarTiendaPorNombre (String nombre);
 }

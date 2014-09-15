@@ -163,5 +163,43 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
         r=(r*(this.hashCode()+1))%1000000007;
         return "Cup"+r+""+this.hashCode();
     }
+
+    @Override
+    public Cupon darCuponPorId(String idCupon) {
+        for (Cupon ac : cupones)
+            if(ac.getIdCupon().compareTo(idCupon)==0)
+                return ac;
+        return null;
+    }
+
+    @Override
+    public boolean descontarDineroCupon(double dineroADescontar, Cupon cupon) {
+        if(dineroADescontar> cupon.getSaldo())
+            return false;
+        cupon.setSaldo(cupon.getSaldo()-dineroADescontar);
+        return true;                   
+    }
+
+    @Override
+    public void aniadirTienda(Tienda tienda) {
+        if(buscarTiendaPorId(tienda.getIdFacebook())==null)
+            tiendas.add(tienda);
+    }
+
+    @Override
+    public Tienda buscarTiendaPorId(String idTienda) {
+        for(Tienda ac : tiendas)
+            if(ac.getIdFacebook().compareTo(idTienda)==0)
+                return ac;
+        return null;
+    }
+
+    @Override
+    public Tienda buscarTiendaPorNombre(String nombre) {
+        for(Tienda ac: tiendas)
+            if(ac.getNombre().compareTo(nombre)==0)
+                return ac;
+        return null;
+    }
     
 }
