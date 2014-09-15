@@ -9,6 +9,7 @@ package pingroup.interfaces;
 import java.util.ArrayList;
 import java.util.List;
 import pingroup.vos.Tienda;
+import pingroup.vos.Usuario;
 
 
 /**
@@ -17,10 +18,24 @@ import pingroup.vos.Tienda;
 public interface IServicioFacebookLocal {
 
     /**
-     * Retorna la tiendas 
-     * @param token
-     * @return 
+     * Retorna la tiendas que estan registradas en el sistema y el usuario le ha dado like
+     * @param id 
+     * @param token 
+     * @return Lista con las tiendas
      */
-    public List<Tienda> getTiendasEnLikes(String token)throws Exception;
+    public List<Tienda> getTiendasEnLikes(String token, String id)throws Exception;
+
+    /**
+     * Retorna la lista de amigos de un usuario que ya estan en la aplicación
+     * @param token
+     * @param id 
+     */
+    public List<Usuario> getAmigosQueUsanApp(String token, String id);
     
+    /**
+     * Retorna un POJO Usuario con toda la informacion necesaria jalada de Facebook
+     * @param token
+     * @param id
+     */
+    public Usuario getUsuario(String token, String id);
 }
