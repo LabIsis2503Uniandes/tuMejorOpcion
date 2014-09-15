@@ -39,6 +39,14 @@ public class Cupon {
         this.idCupon = idCupon;
     }
     
+    /**
+     * Constructor vacio del cupon
+     */
+    public Cupon()
+    {
+        
+    }
+    
     
     public boolean isRedimido() {
         return redimido;

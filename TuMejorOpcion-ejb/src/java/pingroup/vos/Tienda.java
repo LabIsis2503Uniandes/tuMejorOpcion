@@ -39,6 +39,11 @@ public class Tienda {
         this.URLFaccebook = URLFaccebook;
         this.listaCupones = listaCupones;
     }
+    
+    public Tienda()
+    {
+        
+    }
 
     public String getNombre() {
         return nombre;
