@@ -15,6 +15,16 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     
+    <managed-bean>
+        <description>Bean que implementa las funcionalidades del menu de un usuario logeado en la aplicacion</description>
+        <managed-bean-name>menuUsuarioBean</managed-bean-name>
+        <managed-bean-class>pingroup.beans.MenuUsuarioBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    
+    
+    <!-- Reglas de navegacion del sistema -->
+    
     <navigation-rule>
         <from-view-id>/index.xhtml</from-view-id>
         <navigation-case>
