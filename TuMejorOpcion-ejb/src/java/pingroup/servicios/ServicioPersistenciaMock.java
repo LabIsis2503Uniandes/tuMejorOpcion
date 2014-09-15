@@ -163,5 +163,21 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
         r=(r*(this.hashCode()+1))%1000000007;
         return "Cup"+r+""+this.hashCode();
     }
+
+    @Override
+    public Cupon darCuponPorId(String idCupon) {
+        for (Cupon ac : cupones)
+            if(ac.getIdCupon().compareTo(idCupon)==0)
+                return ac;
+        return null;
+    }
+
+    @Override
+    public boolean descontarDineroCupon(double dineroADescontar, Cupon cupon) {
+        if(dineroADescontar> cupon.getSaldo())
+            return false;
+        cupon.setSaldo(cupon.getSaldo()-dineroADescontar);
+        return true;                   
+    }
     
 }

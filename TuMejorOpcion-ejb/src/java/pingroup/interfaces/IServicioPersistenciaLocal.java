@@ -65,6 +65,19 @@ public interface IServicioPersistenciaLocal {
     public void aniadirCupon (Cupon cupon, Usuario usuario) ;
     
     /**
+     * Busca un cupon dado su id, retorna null si no existe el cupon
+     * @param idCupon El id del cupon que se esta buscando
+     */
+    public Cupon darCuponPorId(String idCupon);
+    
+    /**
+     * Descuenta dinero del cupón y retorna true si fue posible descontar ese dinero
+     * @param dineroADescontar La cantidad de dinero a descontar
+     * @param cupon El cupon del que se quiere descontar
+     * @return  True si es una transacción valida y false de lo contrario.
+     */
+    public boolean descontarDineroCupon (double dineroADescontar, Cupon cupon);
+    /**
      * Da la lista de usuarios en el sistema
      * @return List con los usuarios del sistema
      */
