@@ -56,7 +56,11 @@ public class Usuario {
         this.tiendaLike = tiendaLike;
         this.amigos = amigos;
     }
-
+    
+    public Usuario() {
+        
+    }
+    
     public String getUsername() {
         return username;
     }

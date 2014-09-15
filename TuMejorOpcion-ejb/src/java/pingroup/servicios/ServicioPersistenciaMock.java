@@ -39,6 +39,28 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
         cupones = new  ArrayList<Cupon>();
         tiendas = new  ArrayList<Tienda>();
         usuarios = new ArrayList<Usuario>();
+        
+        
+        //TIENDAS
+        this.aniadirTienda(new Tienda("H&M", "21415640912", "https://www.facebook.com/hm", new ArrayList<Cupon>()));
+        this.aniadirTienda(new Tienda("Forever 21", "295959320467678", "https://www.facebook.com/Forever21SanJuan", new ArrayList<Cupon>()));
+        this.aniadirTienda(new Tienda("ARTURO CALLE", "125802010769164", "https://www.facebook.com/arturocallecolombia", new ArrayList<Cupon>()));
+        this.aniadirTienda(new Tienda("ZARA", "33331950906", "https://www.facebook.com/Zara", new ArrayList<Cupon>()));
+
+        //USUARIOS
+        this.aniadirUsuario(new Usuario("lolo", "1234", "yo@yo.yo", "ñfnspiufpsfpsb", new ArrayList<Cupon>(), new ArrayList<Tienda>(), new ArrayList<Usuario>()));
+        this.aniadirUsuario(new Usuario("lalo", "1235", "ya@yo.yo", "ñfnspiufasdasddaspsb", new ArrayList<Cupon>(), new ArrayList<Tienda>(), new ArrayList<Usuario>()));
+        this.aniadirUsuario(new Usuario("lala", "1236", "ya@ya.yo", "ñfnspiufpereeeeeb", new ArrayList<Cupon>(), new ArrayList<Tienda>(), new ArrayList<Usuario>()));
+        
+        this.volverseAmigos(usuarios.get(0), usuarios.get(1));
+        
+        this.aniadirTiendaAUsuario(usuarios.get(2), tiendas.get(2));
+        this.aniadirTiendaAUsuario(usuarios.get(0), tiendas.get(2));
+        this.aniadirTiendaAUsuario(usuarios.get(1), tiendas.get(1));
+        //CUPONES
+        this.aniadirCupon(new Cupon(false, 7777.0, 1000.0, tiendas.get(0), this.generateIdCupon()), usuarios.get(0));
+        this.aniadirCupon(new Cupon(false, 66.0, 200.0, tiendas.get(1), this.generateIdCupon()), usuarios.get(1));
+        this.aniadirCupon(new Cupon(false, 0.0, 2500.0, tiendas.get(2), this.generateIdCupon()), usuarios.get(2));
     }
 
     @Override

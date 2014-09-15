@@ -6,6 +6,7 @@
 
 package pingroup.servicios;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import pingroup.excepciones.AutenticacionException;
 import pingroup.interfaces.IServicioPersistenciaLocal;
@@ -21,6 +22,7 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
     /**
      * Interface con referencia al servicio de persistencia en el sistema
      */
+    @EJB
     private IServicioPersistenciaLocal persistencia;
     
     /**
@@ -28,7 +30,7 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
      */
     public ServicioSeguridadMock()
     {
-        persistencia=new ServicioPersistenciaMock();
+        
     }
     
     /**
@@ -44,12 +46,6 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
             return r;
         else
         {
-            //MARICO TODO
-            //TODO
-            //EMANUEL ES UN MARICO
-            //SUPER TODO
-            
-            //EN SERIO TODO
             return null;
         }
     }
