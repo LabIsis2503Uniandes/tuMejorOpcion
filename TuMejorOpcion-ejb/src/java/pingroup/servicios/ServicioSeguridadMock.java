@@ -46,12 +46,6 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
             return r;
         else
         {
-            //MARICO TODO
-            //TODO
-            
-            //SUPER TODO
-            
-            //EN SERIO TODO
             return null;
         }
     }
