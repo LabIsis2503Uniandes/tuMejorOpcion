@@ -39,7 +39,7 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
      */
     @Override
     public Usuario ingresar(String token) throws AutenticacionException {
-        Usuario r = persistencia.buscarPorToken(token);
+        Usuario r = persistencia.buscarUsuarioPorToken(token);
         if(r!=null)
             return r;
         else

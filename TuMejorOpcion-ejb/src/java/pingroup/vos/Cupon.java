@@ -25,12 +25,18 @@ public class Cupon {
      * La tienda a la que pertenece el cupon
      */
     private Tienda tienda;
+    
+    /**
+     * El id único del cupon
+     */
+    private String idCupon;
 
-    public Cupon(boolean redimido, double saldo, double costo, Tienda tienda) {
+    public Cupon(boolean redimido, double saldo, double costo, Tienda tienda, String idCupon) {
         this.redimido = redimido;
         this.saldo = saldo;
         this.costo = costo;
         this.tienda = tienda;
+        this.idCupon = idCupon;
     }
     
     
@@ -64,6 +70,14 @@ public class Cupon {
 
     public void setTienda(Tienda tienda) {
         this.tienda = tienda;
+    }
+
+    public String getIdCupon() {
+        return idCupon;
+    }
+
+    public void setIdCupon(String idCupon) {
+        this.idCupon = idCupon;
     }
     
     
