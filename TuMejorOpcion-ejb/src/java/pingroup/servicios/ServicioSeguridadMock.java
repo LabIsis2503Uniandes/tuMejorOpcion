@@ -46,7 +46,7 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
         {
             //MARICO TODO
             //TODO
-            
+            //EMANUEL ES UN MARICO
             //SUPER TODO
             
             //EN SERIO TODO
