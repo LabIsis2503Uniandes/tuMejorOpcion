@@ -48,6 +48,7 @@ public class LoginBean implements Serializable{
     
     public String hayUserBean ()
     {
+        System.out.println(usrToken.getValue());
         if (usrToken.getValue() == "NoHayId")
             return "No";
         else 
