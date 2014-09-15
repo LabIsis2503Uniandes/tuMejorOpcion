@@ -95,5 +95,23 @@ public interface IServicioPersistenciaLocal {
      */
     public List<Cupon> getCupones();
     
-  
+    /**
+     * Aniade una nuvea tienda en el sistema
+     * @param tienda La tienda nueva que se quiere aniadir en el sistema
+     */
+    public void aniadirTienda (Tienda tienda);
+    
+    /**
+     * Busca una tienda por su Id de Facebook
+     * @param idTienda El Id de la tienda
+     * @return La tienda buscada o null si no está en el sistema
+     */
+    public Tienda buscarTiendaPorId (String idTienda);
+    
+    /**
+     * Busca una tienda por su nombre
+     * @param nombre Nombre de la tienda buscada
+     * @return La tienda buscada o null si no está en el sistema
+     */
+    public Tienda buscarTiendaPorNombre (String nombre);
 }
