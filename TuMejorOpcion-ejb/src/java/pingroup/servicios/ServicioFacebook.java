@@ -35,12 +35,12 @@ public class ServicioFacebook implements IServicioFacebookLocal {
         persistencia = new ServicioPersistenciaMock();
     }
     
-    public List<Tienda> getTiendasEnLikes(String token, String id) throws Exception{
+    public List<Tienda> getTiendasEnLikes(String token) throws Exception{
         
         ArrayList<Tienda> tiendas = null;
         
         try {
-            URL url = new URL("https://graph.facebook.com/v2.1/"+id+"?access_token="+token+"&fields=likes{link,name,category}&format=json&method=get&pretty=0&suppress_http_code=1&limit=300");
+            URL url = new URL("https://graph.facebook.com/v2.1/me?access_token="+token+"&fields=likes{link,name,category}&format=json&method=get&pretty=0&suppress_http_code=1&limit=300");
             
             HttpsURLConnection yc = (HttpsURLConnection) url.openConnection();
             
@@ -79,11 +79,11 @@ public class ServicioFacebook implements IServicioFacebookLocal {
         return tiendas;
     }
     
-    public List<Usuario> getAmigosQueUsanApp(String token, String id) {
+    public List<Usuario> getAmigosQueUsanApp(String token) {
         ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
         
         try {
-            URL url = new URL("https://graph.facebook.com/v2.1/"+id+"/friends?access_token="+token+"&fields=installed%2Cname&format=json&method=get&pretty=0&suppress_http_code=1");
+            URL url = new URL("https://graph.facebook.com/v2.1/me/friends?access_token="+token+"&fields=installed%2Cname&format=json&method=get&pretty=0&suppress_http_code=1");
             
             HttpsURLConnection yc = (HttpsURLConnection) url.openConnection();
             
@@ -115,12 +115,12 @@ public class ServicioFacebook implements IServicioFacebookLocal {
         return usuarios;
     }
     
-    public Usuario getUsuario(String token, String id) {
+    public Usuario getUsuario(String token) {
       
         Usuario usuario = new Usuario();
         
         try {
-            URL url = new URL("https://graph.facebook.com/v2.1/"+id+"?fields=email,name&access_token="+token+"&fields=installed%2Cname&format=json&method=get&pretty=0&suppress_http_code=1");
+            URL url = new URL("https://graph.facebook.com/v2.1/me?fields=email,name&access_token="+token+"&fields=installed%2Cname&format=json&method=get&pretty=0&suppress_http_code=1");
             
             HttpsURLConnection yc = (HttpsURLConnection) url.openConnection();
             
@@ -141,8 +141,8 @@ public class ServicioFacebook implements IServicioFacebookLocal {
             usuario.setTokenFacebook(token);
             usuario.setUsername(""+resp.get("name"));
             usuario.setCorreo(""+resp.get("email"));
-            usuario.setAmigos(this.getAmigosQueUsanApp(token, id));
-            usuario.setTiendaLike(this.getTiendasEnLikes(token, id));
+            usuario.setAmigos(this.getAmigosQueUsanApp(token));
+            usuario.setTiendaLike(this.getTiendasEnLikes(token));
            
         } catch(Exception e) {
             System.out.println(e.getMessage());
