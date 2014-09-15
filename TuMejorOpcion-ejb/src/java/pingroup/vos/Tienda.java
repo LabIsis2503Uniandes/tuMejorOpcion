@@ -76,6 +76,11 @@ public class Tienda {
     public void setListaCupones(List<Cupon> listaCupones) {
         this.listaCupones = listaCupones;
     }
+    
+    public String toString()
+    {
+        return nombre;
+    }
 
     
 }

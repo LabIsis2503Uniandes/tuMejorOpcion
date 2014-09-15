@@ -46,7 +46,7 @@ public class ServicioSeguridadMock implements IServicioSeguridadLocal{
             return r;
         else
         {
-            return null;
+            return persistencia.darUsuarioPrueba();
         }
     }
     
