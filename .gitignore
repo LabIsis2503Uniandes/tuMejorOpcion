@@ -15,3 +15,5 @@ TuMejorOpcion/dist/gfdeploy/TuMejorOpcion/TuMejorOpcion-war_war/.netbeans_update
 *.class
 *.ear
 *.war
+/TuMejorOpcion-ejb/dist/
+/TuMejorOpcion-war/dist/
