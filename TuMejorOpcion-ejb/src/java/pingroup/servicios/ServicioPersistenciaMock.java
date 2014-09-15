@@ -35,6 +35,11 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
      */
     private static List<Usuario> usuarios;
     
+    /**
+     * Usuario de prueba
+     */
+    private Usuario usuarioPrueba;
+    
     public ServicioPersistenciaMock() {
         cupones = new  ArrayList<Cupon>();
         tiendas = new  ArrayList<Tienda>();
@@ -52,6 +57,7 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
         this.aniadirUsuario(new Usuario("lalo", "1235", "ya@yo.yo", "ñfnspiufasdasddaspsb", new ArrayList<Cupon>(), new ArrayList<Tienda>(), new ArrayList<Usuario>()));
         this.aniadirUsuario(new Usuario("lala", "1236", "ya@ya.yo", "ñfnspiufpereeeeeb", new ArrayList<Cupon>(), new ArrayList<Tienda>(), new ArrayList<Usuario>()));
         
+        usuarioPrueba = usuarios.get(0);
         this.volverseAmigos(usuarios.get(0), usuarios.get(1));
         
         this.aniadirTiendaAUsuario(usuarios.get(2), tiendas.get(2));
@@ -222,6 +228,11 @@ public class ServicioPersistenciaMock implements IServicioPersistenciaLocal {
             if(ac.getNombre().compareTo(nombre)==0)
                 return ac;
         return null;
+    }
+    
+    public Usuario darUsuarioPrueba()
+    {
+        return usuarioPrueba;
     }
     
 }

@@ -70,6 +70,7 @@ public class MenuUsuarioBean implements Serializable{
             LoginBean sessionSecurity = (LoginBean) FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("loginBean");
             usuario = sessionSecurity.getUsuario();
             amigos = usuario.getAmigos();
+            cupones = usuario.getCupones();
         }
     }
 

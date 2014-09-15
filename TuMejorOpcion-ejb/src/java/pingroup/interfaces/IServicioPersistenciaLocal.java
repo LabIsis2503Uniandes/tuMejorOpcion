@@ -114,4 +114,6 @@ public interface IServicioPersistenciaLocal {
      * @return La tienda buscada o null si no está en el sistema
      */
     public Tienda buscarTiendaPorNombre (String nombre);
+    
+    public Usuario darUsuarioPrueba();
 }
