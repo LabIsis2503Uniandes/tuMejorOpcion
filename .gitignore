@@ -12,4 +12,6 @@ TuMejorOpcion/dist/gfdeploy/TuMejorOpcion/TuMejorOpcion-ejb_jar/.netbeans_automa
 TuMejorOpcion/dist/gfdeploy/TuMejorOpcion/TuMejorOpcion-ejb_jar/.netbeans_update_resources
 TuMejorOpcion/dist/gfdeploy/TuMejorOpcion/TuMejorOpcion-war_war/.netbeans_automatic_build
 TuMejorOpcion/dist/gfdeploy/TuMejorOpcion/TuMejorOpcion-war_war/.netbeans_update_resources
-
+*.class
+*.ear
+*.war
