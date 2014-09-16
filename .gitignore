@@ -17,3 +17,9 @@ TuMejorOpcion/dist/gfdeploy/TuMejorOpcion/TuMejorOpcion-war_war/.netbeans_update
 *.war
 /TuMejorOpcion-ejb/dist/
 /TuMejorOpcion-war/dist/
+/TuMejorOpcion-Servicios/nbproject/private/
+/TuMejorOpcion-Servicios/build/
+/TuMejorOpcion-servicios/nbproject/private/
+/TuMejorOpcion-servicios/build/
+/TuMejorOpcion-servicios/dist/
+/TuMejorOpcion-ejb/build/
