@@ -17,19 +17,13 @@
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'></link>
         
             <ice:panelGroup>
-            <ice:panelGrid columns="2">
-                <ice:panelGroup style="float:left;padding-right: 50px;padding-bottom: 80px">
-                    <ice:panelGrid columns="2">
-                        <ice:panelGroup>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <!-- Panel para crear y ver los cupones del usuario -->
-                                        
-                                        <ice:panelGroup>
+                <ice:panelGrid columns="2" style="vertical-align: top">
+                <ice:column style="vertical-align:top;float:left;padding-right: 50px;padding-bottom: 80px" id='lolol'>
+                    
+                    <ice:panelGroup>
                                             <!-- Los cupones de un usuario -->
-                                            <ice:outputText value="Tus Bonos" style="font-weight: bold;padding-left: 10px"/>
-                                            <ice:panelGroup style="border-color: #C22A2A;border-width: 1px;border-style: solid ; border-radius: 25px">
+                                            <ice:outputText value="Tus Bonos" style="font-weight: bold;padding-left: 10px ; font-family:'Pacifico', cursive; font-size: large"/>
+                                            <ice:panelGroup style="border-color: #C22A2A;border-width: 1px;border-style: solid ; border-radius: 25px; padding: 10px; width: content-box">
                                                 <h:form>
                                                     <ice:outputText value="Bonos Comprados" style="font-weight: bold;padding-left: 10px"/>
                                                     <ice:dataTable
@@ -109,17 +103,17 @@
                                             
                                             <!-- Crear un cupon -->                                            
                                             <ice:panelGroup>
-                                                <ice:outputText value="Crear Cupon" style="font-weight: bold;padding-left: 10px"/>
+                                                <ice:outputText value="Crear Cupon" style="font-weight: bold;padding-left: 10px ; font-family:'Pacifico', cursive; font-size: large"/>
                                             </ice:panelGroup>
 
-                                            <ice:panelGroup style="border-color:gray;border-width: 1px;border-style: solid ">
+                                            <ice:panelGroup style="border-color: #C22A2A;border-width: 1px;border-style: solid; border-radius: 25px; background-color: #C22A2A;">
                                                 <h:form>
                                                     <table>
-                                                        <tr>
+                                                        <tr >
                                                             <td>
                                                                 <ice:outputLabel for="TxtSaldo"
                                                                                  value="Saldo del Cupon"
-                                                                                 style="font-weight: bold"/>
+                                                                                 style="font-weight: bold; color: #F1F1F1"/>
                                                             </td>
                                                             <td>
                                                                 <ice:inputText id="TxtSaldo"
@@ -135,7 +129,7 @@
                                                             <td>
                                                                 <ice:outputLabel for="SelectTienda"
                                                                                  value="Tienda"
-                                                                                 style="font-weight: bold"/>
+                                                                                 style="color: #F1F1F1; font-weight: bold"/>
                                                             </td>
                                                             <td>
                                                                 <ice:selectOneMenu value="#{menuUsuarioBean.tienda}"> 
@@ -151,16 +145,10 @@
                                                 </h:form>
                                             </ice:panelGroup>
                                         </ice:panelGroup>
-                                    </td>
-                                </tr>
-                            </table>
-                        </ice:panelGroup>
-                    </ice:panelGrid>
-                </ice:panelGroup>
-
-                <!-- Paneles con los amigos -->
-                <ice:panelGroup styleClass="exampleBox panelSeriesContainer">
-                    
+                </ice:column>
+                <ice:column style="vertical-align:top;float:left;padding-right: 50px;padding-bottom: 80px" id='lolol2'>
+                    <ice:outputText value="Tus Amigos" style="font-weight: bold;padding-left: 10px ; font-family:'Pacifico', cursive; font-size: large"/> 
+                
                     <h:form>     
                         <ice:panelSeries id="data"
                                          value="#{menuUsuarioBean.amigos}"
@@ -225,7 +213,13 @@
                             </ice:dataPaginator>
                         </ice:panelGroup>
                     </h:form>
-                </ice:panelGroup>
+                </ice:column>
+
+                <!-- Paneles con los amigos -->
+                
+                
+                
+                
             </ice:panelGrid>
         </ice:panelGroup>
     </ui:define>

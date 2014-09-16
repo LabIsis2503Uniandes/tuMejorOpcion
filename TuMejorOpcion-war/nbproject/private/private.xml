@@ -15,6 +15,9 @@
             <file>file:/C:/Users/estudiante/Desktop/Workspace%20NetBeans/Experimento%201/TuMejorOpcion/TuMejorOpcion-war/web/main-template.xhtml</file>
         </group>
         <group/>
-        <group name="Laboratorio2"/>
+        <group name="Laboratorio2">
+            <file>file:/C:/Users/Banana/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-war/web/index.xhtml</file>
+            <file>file:/C:/Users/Banana/Documents/NetBeansProjects/tuMejorOpcion/TuMejorOpcion-war/web/menu.xhtml</file>
+        </group>
     </open-files>
 </project-private>
